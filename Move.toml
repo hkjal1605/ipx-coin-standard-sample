@@ -1,0 +1,12 @@
+[package]
+name = "IPXCoinStandardSample"
+version = "0.0.1"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/mainnet", override = true }
+IPXCoinStandard = { git = "https://github.com/interest-protocol/ipx-coin-standard.git", rev = "v1.0", override = true }
+
+[addresses]
+ipx_standard_sample = "0x0"
+ipx_coin_standard = "0x103bc8a715277926ad0821a2b754c493e705dc5f0943b9f354338c9482d40492"
